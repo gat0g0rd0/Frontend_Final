@@ -1,0 +1,18 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<div class = "container">
+	<div class="wrapper">
+		<form action="admin_login.php" method="post" name="Login_Form" class="form-signin" #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+		    <h3 class="form-signin-heading">Bienvenido! Por favor, Inicie Sesion</h3>
+			  <hr class="colorgraph"><br>
+          <input type="text" class="form-control" id="nombreUsuario" name="nombreUsuario" placeholder="Usuario" autofocus="" [(ngModel)]="nombreUsuario" required />
+          <!--label class="form-label" for="nombreUsuario">Usuario</!--label-->
+          <input type="password" class="form-control" id="password" name="password" placeholder="Clave" [(ngModel)]="password" required />  		  
+          <!--comentario-->
+          <button class="btn btn-lg btn-primary btn-block"  name="Submit" value="Login" type="Submit">Login</button>  			
+    </form>
+	</div>
+</div>

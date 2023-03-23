@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <a href=""><img src="../../../assets/argentinaprograma.png" id="aprograma"></a>
+        </div>
+        <div class="redes">
+            <a href=""><img src="../../../assets/redes-sociales.png" id="redes"></a>
+            <button type="button" class="btn btn-warning" (click)="login()" *ngIf="!isLogged">INGRESAR</button>
+            <button type="button" class="btn btn-warning" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+        </div>
+    </div>
+</div>
+
